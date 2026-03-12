@@ -9,6 +9,53 @@
             <!-- Set the sky -->
             <a-sky color="black"></a-sky>
 
+            <a-cylinder color="blue" height="4"
+                    top-radius="2" bottom-radius="2"
+                    animation="
+                    property: position;
+                    easing: linear;
+                    from: 4 2 -8;
+                    to: 4 7 -8;
+                    dur: 1000; 
+                    loop: true;
+                    dir: alternate;
+                    "
+            ></a-cylinder>
+
+             <a-cylinder color="red" height="4"
+                    top-radius="2" bottom-radius="2"
+                    animation="
+                    property: position;
+                    easing: linear;
+                    from: 4 1 -8;
+                    to: 4 -6 -8;
+                    dur: 1000; 
+                    loop: true;
+                    dir: alternate;
+                    "
+                    
+            ></a-cylinder>
+             
+            <a-sphere color="purple" height="4"
+                    top-radius="2" bottom-radius="2"
+                    position="4 1 -8"
+                    animation="
+                    property: color;
+                    from: purple;
+                    to: red;
+                    dur: 1000; 
+                    loop: true;
+                    dir: alternate;
+                    "
+
+                    animation_scale="
+                    from: 0;
+                    to: 100;
+
+                    "
+            ></a-sphere>
+
+
         </a-scene>
     </body>
 </html>
